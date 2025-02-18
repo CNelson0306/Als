@@ -74,7 +74,7 @@ nav .hamburger span {
     nav ul {
         display: none;
         flex-direction: column;
-        width: 100%;
+        width: 85%;
         margin-bottom: 1rem;
     }
 
@@ -112,7 +112,7 @@ nav .hamburger span {
     nav ul {
         display: none;
         flex-direction: column;
-        width: 100%;
+        width: 80%;
         margin-bottom: 1rem;
     }
 
