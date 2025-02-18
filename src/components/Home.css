@@ -7,6 +7,7 @@
 .header {
   position: relative;
   text-align: center;
+  width: 100%;
 }
 
 .header img {
@@ -18,28 +19,34 @@
 
 .header h1 {
   position: absolute;
-  top: 30%;
-  left: 20%;
+  left: 50%; /* Same left value for alignment */
   transform: translate(-50%, -50%);
   color: white;
-  text-align: center;
-  background: rgba(46,139,87); 
+  background: rgba(46,139,87);
   padding: 10px;
   border-radius: 8px;
-  margin-left: 10px;
+  width: 50%;
+  max-width: 600px;
 }
 
 .header h2 {
   position: absolute;
-  top: 50%;
-  left: 10%;
+  left: 50%; /* Same left value for alignment */
   transform: translate(-50%, -50%);
-  color: white; 
-  text-align: center;
+  color: white;
   background: rgba(46,139,87);
   padding: 10px;
   border-radius: 8px;
-  margin-left: 10px;
+  width: 20%;
+  max-width: 600px;
+}
+
+.header h1 {
+  top: 30%;
+}
+
+.header h2 {
+  top: 50%;
 }
 
 .intro {
