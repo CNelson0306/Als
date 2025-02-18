@@ -6,3 +6,21 @@
         color: #888;
     }
 }
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social h4 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Roboto';
+    margin-bottom: 0;
+}
+
+.social img {
+    width: 100px;
+}

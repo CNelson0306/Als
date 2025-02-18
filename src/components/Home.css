@@ -4,10 +4,47 @@
     opacity: 1;
 }
 
+.header {
+  position: relative;
+  text-align: center;
+}
+
+.header img {
+  width: 100%;
+  height: 350px;
+  display: block;
+  opacity: 1;
+}
+
+.header h1 {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background: rgba(46,139,87); 
+  padding: 10px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.header h2 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  text-align: center;
+  background: rgba(46,139,87);
+  padding: 10px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
 .intro {
     display: flex; /* Enables flexbox */
     align-items: center; /* Aligns items vertically */
-    gap: 20px; /* Adds space between the image and text */
+    gap: 100px; /* Adds space between the image and text */
     flex-direction: row-reverse;
     flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
   }
@@ -18,17 +55,78 @@
     flex-shrink: 0; /* Prevents the image from shrinking */
     border-radius: 10px;
     margin-right: 20px;
+    margin-bottom: 20px;
   }
   
   .intro .text {
+    margin: 20px;
+    width: 600px;
     display: flex;
     flex-direction: column;
-    font-size: 24px;
+    font-size: 16px;
     font-family: 'Roboto';
     text-transform: uppercase;
     text-align: center;
     background-color: rgba(248,248,255);
-    padding: 30px;
-    border-radius: 30%;
-    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+
+  @media (max-width: 760px) {
+    .header h1 {
+      left: 50%;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .header h2 {
+      left: 50%;
+      font-size: 20px;
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .text {
+      max-width: 80%;
+      font-size: 14px;
+    }
+
+    .text h2 {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header h1 {
+      left: 50%;
+      font-size: 22px;
+    }
+
+    .header h2 {
+      left: 50%;
+      font-size: 18px;
+      margin-top: 30px;
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .intro img {
+      margin-bottom: 20px;
+    }
+
+    .text {
+      max-width: 80%;
+      font-size: 14px;
+    }
+
+    .text h2 {
+      font-size: 24px;
+    }
   }

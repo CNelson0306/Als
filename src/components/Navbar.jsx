@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {Link, NavLink} from 'react-router-dom'
+import logo from '../assets/logo.png';
 import './Navbar.css';
 
 export const Navbar = () => {
@@ -10,7 +11,7 @@ export const Navbar = () => {
 
   return (
     <nav>
-        <h1>Abnormal Load Services</h1>
+        <img src={logo} alt='Logo' />
         <div className='hamburger' onClick={() => {
             setHamburgerOpen(!hamburgerOpen)
         }}>
@@ -24,7 +25,7 @@ export const Navbar = () => {
                 <NavLink to="/">Home</NavLink>
             </li>
             <li>
-                <NavLink to="/services">Services</NavLink>
+                <NavLink to="/services">Gallery</NavLink>
             </li>
             <li>
                 <NavLink to="/contact">Contact</NavLink>
