@@ -20,6 +20,16 @@ import img16 from '../assets/van16.JPG';
 import img17 from '../assets/van17.JPG';
 import img18 from '../assets/van18.JPG';
 import img19 from '../assets/van19.JPG';
+import img20 from '../assets/van20.jpg';
+import img21 from '../assets/van21.jpg';
+import img22 from '../assets/van22.jpg';
+import img23 from '../assets/van23.jpg';
+import img24 from '../assets/van24.jpg';
+import img25 from '../assets/van25.jpg';
+import img26 from '../assets/van26.jpg';
+import img27 from '../assets/van27.jpg';
+import img28 from '../assets/van28.jpg';
+import img29 from '../assets/van29.jpg';
 
 
 // Photo array that will be mapped through to display the images
@@ -101,6 +111,46 @@ const photos = [
         id:19,
         src: img19,
     },
+    {
+        id:20,
+        src: img20,
+    },
+    {
+        id:21,
+        src: img21,
+    },
+    {
+        id:22,
+        src: img22,
+    },
+    {
+        id:23,
+        src: img23,
+    },
+    {
+        id:24,
+        src: img24,
+    },
+    {
+        id:25,
+        src: img25,
+    },
+    {
+        id:26,
+        src: img26,
+    },
+    {
+        id:27,
+        src: img27,
+    },
+    {
+        id:28,
+        src: img28,
+    },
+    {
+        id:29,
+        src: img29,
+    },
 
 ];
 
@@ -109,11 +159,12 @@ const Services = () => {
     return (
         <>
         <div className='header'>
+            <h1>Gallery</h1>
             <img src={header} alt='Header image wide load' />
         </div>
         
+        <div className='background'>
         <div className='gallery'>
-            <h1>Gallery</h1>
             <div className='imgContainer'>
                 {photos.map((photo) => {
                     return (
@@ -123,6 +174,7 @@ const Services = () => {
                     )
                 })}
             </div>
+        </div>
         </div>
         </> 
     )
