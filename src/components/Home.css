@@ -32,7 +32,7 @@
 .header h2 {
   position: absolute;
   left: 50%; /* Same left value for alignment */
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -10%);
   color: white;
   background: rgba(46,139,87);
   padding: 10px;
@@ -79,7 +79,7 @@
     margin: 30px;
   }
 
-  @media (max-width: 760px) {
+  @media (max-width: 960px) {
     .header h1 {
       left: 50%;
       font-size: 24px;
@@ -89,6 +89,34 @@
     .header h2 {
       left: 50%;
       font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .text {
+      max-width: 80%;
+      font-size: 14px;
+    }
+
+    .text h2 {
+      font-size: 24px;
+    }
+  }
+  @media (max-width: 650px) {
+    .header h1 {
+      left: 50%;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .header h2 {
+      left: 50%;
+      font-size: 20px;
+      margin-top: 40px;
     }
 
     .intro {
